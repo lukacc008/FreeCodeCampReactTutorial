@@ -16,7 +16,7 @@ const page = (
     </div>
 )
 */
-
+/*
 const Navigacija = (
     <nav>
         <h1>Manijak.com</h1>
@@ -35,3 +35,45 @@ ReactDOM.render(
     Navigacija,
      document.getElementById("root")
      );
+
+     ReactDOM.render(
+        Navigacija,
+         document.getElementById("root2")
+         );
+*/
+/*
+const Zadatak = (
+     <div>
+        <h1>My awesome website in React</h1>
+        <h3>Reasons i love React</h3>
+        <ol>
+            <li>Its composable</li>
+            <li>Its delarative</li>
+            <li>Its a hireable skill</li>
+            <li>Its actively maintained by skilled people</li>
+        </ol>
+     </div>
+)
+
+ReactDOM.render(Zadatak, document.getElementById("root"))
+*/
+
+const page = (
+   <div>
+        <h1>Fun facts about React</h1>
+          <ul>
+              <li>Was first released in 2013</li>
+              <li>Was originally created by Jordan Walke</li>
+              <li>Has well over 100K stars on Github</li>
+              <li>Is maintained by Facebook</li>
+              <li>Powers thousands of enterprise apps, including
+                  mobile apps
+              </li>
+          </ul>        
+    </div>
+)
+const slike = (
+    <img src="./images/React-icon.svg.png" width="40px" />
+)
+ReactDOM.render(page, document.getElementById("root"))
+ReactDOM.render(slike, document.getElementById("logo"))
