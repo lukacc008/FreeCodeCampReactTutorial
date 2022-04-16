@@ -58,8 +58,10 @@ const Zadatak = (
 ReactDOM.render(Zadatak, document.getElementById("root"))
 */
 
+/*
 const page = (
    <div>
+       <img src="./images/React-icon.svg.png" width="40px" />
         <h1>Fun facts about React</h1>
           <ul>
               <li>Was first released in 2013</li>
@@ -72,8 +74,69 @@ const page = (
           </ul>        
     </div>
 )
-const slike = (
-    <img src="./images/React-icon.svg.png" width="40px" />
-)
 ReactDOM.render(page, document.getElementById("root"))
-ReactDOM.render(slike, document.getElementById("logo"))
+*/
+
+/*
+function Page () {
+    return (
+        <div>
+       <img src="./images/React-icon.svg.png" width="40px" />
+        <h1>Fun facts about React</h1>
+          <ul>
+              <li>Was first released in 2013</li>
+              <li>Was originally created by Jordan Walke</li>
+              <li>Has well over 100K stars on Github</li>
+              <li>Is maintained by Facebook</li>
+              <li>Powers thousands of enterprise apps, including
+                  mobile apps
+              </li>
+          </ul>        
+    </div>
+       )
+    }
+
+    ReactDOM.render(<Page/>, document.getElementById("root"))
+    */
+
+    function Header() {
+        return (
+        <header>
+            <nav>
+                <img src="./images/React-icon.svg.png" width="40px" />
+            </nav>
+        </header>
+        )
+    }
+    function Footer() {
+        return (
+            <footer>
+            <small>Ⓒ 2022 ID software development. All rights reserved.</small>
+             </footer> 
+        )
+    }
+    function NaslovLista() {
+        return (
+            <div>
+            <h1>Reasons why im excited to learn React!</h1>
+            <ol>
+                <li>Its a popular library</li>
+                <li>Im more likely to get a job as a developer
+                    if u know React!
+                </li>
+            </ol>
+            </div>
+        )
+    }
+
+function Page() { 
+    return (
+        <div>
+            <Header />
+            <NaslovLista />
+            <Footer />
+        </div>
+    )
+}
+ReactDOM.render(<Page/>, document.getElementById('root'));
+
