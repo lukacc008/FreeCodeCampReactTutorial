@@ -101,16 +101,21 @@ function Page () {
 
     function Header() {
         return (
-        <header>
-            <nav>
-                <img src="./images/React-icon.svg.png" width="40px" />
+        <header className="header">
+            <nav className="nav">
+                <img className="slika" src="./images/React-icon.svg.png" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                     <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
         )
     }
     function Footer() {
         return (
-            <footer>
+            <footer className="footer">
             <small>Ⓒ 2022 ID software development. All rights reserved.</small>
              </footer> 
         )
